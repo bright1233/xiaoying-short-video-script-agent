@@ -1,0 +1,35 @@
+[
+  {
+    "step": 1,
+    "action": "search",
+    "parameters": {
+      "query": "登月火箭 科普 事实"
+    },
+    "result_summary": "检索到 0 条素材：[]",
+    "next_action": "search",
+    "decision_basis": "先检索素材以获取可用事实"
+  },
+  {
+    "step": 2,
+    "action": "search",
+    "parameters": {
+      "query": "登月火箭 科普 知识"
+    },
+    "result_summary": "检索到 0 条素材：[]",
+    "next_action": "request_input",
+    "decision_basis": "首次检索为空，按规则改写查询再检索一次"
+  },
+  {
+    "step": 3,
+    "action": "request_input",
+    "parameters": {
+      "missing_fields": [
+        "相关科普素材或事实来源",
+        "允许检索的关键词或资料链接"
+      ]
+    },
+    "result_summary": "",
+    "next_action": null,
+    "decision_basis": "连续两次检索为空，需补充素材来源后才能撰写脚本"
+  }
+]

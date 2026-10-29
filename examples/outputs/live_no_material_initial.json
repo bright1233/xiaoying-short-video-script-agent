@@ -1,0 +1,132 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "needs_input",
+    "title": null,
+    "scenes": [],
+    "estimated_duration_sec": null,
+    "material_ids": [],
+    "risks": [],
+    "missing_fields": [
+      "facts",
+      "material_ids"
+    ],
+    "reason": "缺少完成脚本所需资料",
+    "trace": [
+      {
+        "step": 1,
+        "action": "search",
+        "parameters": {
+          "query": "登月火箭 科普 事实 阿波罗 土星五号"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "先检索登月火箭相关素材"
+      },
+      {
+        "step": 2,
+        "action": "search",
+        "parameters": {
+          "query": "火箭 登月 科普 知识 事实"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写为更通用查询以获取可用素材"
+      },
+      {
+        "step": 3,
+        "action": "search",
+        "parameters": {
+          "query": "登月火箭 科普 知识 事实 中国探月"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询以获取可用素材"
+      },
+      {
+        "step": 4,
+        "action": "search",
+        "parameters": {
+          "query": "登月火箭 科普 事实"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询以获取可用素材"
+      },
+      {
+        "step": 5,
+        "action": "search",
+        "parameters": {
+          "query": "登月火箭 科普 事实 人类 月球"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询再检索一次"
+      },
+      {
+        "step": 6,
+        "action": "search",
+        "parameters": {
+          "query": "土星五号 阿波罗登月 火箭 科普 事实"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写为具体登月火箭查询"
+      },
+      {
+        "step": 7,
+        "action": "search",
+        "parameters": {
+          "query": "阿波罗计划 登月火箭 土星五号 参数 历史 科普"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询再试一次"
+      },
+      {
+        "step": 8,
+        "action": "search",
+        "parameters": {
+          "query": "土星五号 阿波罗 登月 火箭 科普 资料"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询一次"
+      },
+      {
+        "step": 9,
+        "action": "search",
+        "parameters": {
+          "query": "土星五号 火箭 阿波罗11号 登月 参数"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "search",
+        "decision_basis": "首次检索为空，改写查询再检索一次"
+      },
+      {
+        "step": 10,
+        "action": "search",
+        "parameters": {
+          "query": "阿波罗11号 土星五号 登月 火箭 科普 事实 参数"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "request_input",
+        "decision_basis": "首次检索为空，改写查询再试"
+      },
+      {
+        "step": 11,
+        "action": "request_input",
+        "parameters": {
+          "missing_fields": [
+            "facts",
+            "material_ids"
+          ]
+        },
+        "result_summary": "",
+        "next_action": null,
+        "decision_basis": "检索为空且无剩余工具可改写查询，需补充登月火箭可用事实素材"
+      }
+    ],
+    "model_mode": "live"
+  }
+}

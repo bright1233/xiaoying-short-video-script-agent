@@ -1,0 +1,157 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "completed",
+    "title": "字幕：快速了解",
+    "scenes": [
+      {
+        "shot": "展示创作场景",
+        "narration": "支持字幕",
+        "subtitle": "支持字幕",
+        "planned_seconds": 15,
+        "fact_claims": [
+          "支持字幕"
+        ],
+        "material_ids": [
+          "P01"
+        ]
+      },
+      {
+        "shot": "展示画面结果",
+        "narration": "继续创作",
+        "subtitle": "继续创作",
+        "planned_seconds": 15,
+        "fact_claims": [],
+        "material_ids": []
+      }
+    ],
+    "estimated_duration_sec": 30,
+    "material_ids": [
+      "P01"
+    ],
+    "risks": [],
+    "missing_fields": [],
+    "reason": null,
+    "trace": [
+      {
+        "step": 1,
+        "action": "search",
+        "parameters": {
+          "query": "字幕"
+        },
+        "result_summary": "检索到 1 条素材：['P01']",
+        "next_action": "set_draft",
+        "decision_basis": "查找可引用的素材事实"
+      },
+      {
+        "step": 2,
+        "action": "set_draft",
+        "parameters": {
+          "draft": {
+            "title": "字幕：快速了解",
+            "scenes": [
+              {
+                "shot": "展示创作场景",
+                "narration": "支持字幕，一起看看如何呈现。",
+                "subtitle": "支持字幕",
+                "planned_seconds": 19,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "展示画面结果",
+                "narration": "根据内容需要调整画面。",
+                "subtitle": "继续创作",
+                "planned_seconds": 19,
+                "fact_claims": [],
+                "material_ids": []
+              }
+            ]
+          }
+        },
+        "result_summary": "{'saved_in_memory': True, 'draft_version': 1}",
+        "next_action": "estimate",
+        "decision_basis": "依据检索事实形成初稿"
+      },
+      {
+        "step": 3,
+        "action": "estimate",
+        "parameters": {},
+        "result_summary": "工具失败：RuntimeError: 注入的一次性工具故障",
+        "next_action": "estimate",
+        "decision_basis": "当前脚本尚未估时"
+      },
+      {
+        "step": 4,
+        "action": "estimate",
+        "parameters": {},
+        "result_summary": "估计总时长 38 秒",
+        "next_action": "set_draft",
+        "decision_basis": "工具失败，重试一次"
+      },
+      {
+        "step": 5,
+        "action": "set_draft",
+        "parameters": {
+          "draft": {
+            "title": "字幕：快速了解",
+            "scenes": [
+              {
+                "shot": "展示创作场景",
+                "narration": "支持字幕",
+                "subtitle": "支持字幕",
+                "planned_seconds": 15,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "展示画面结果",
+                "narration": "继续创作",
+                "subtitle": "继续创作",
+                "planned_seconds": 15,
+                "fact_claims": [],
+                "material_ids": []
+              }
+            ]
+          }
+        },
+        "result_summary": "{'saved_in_memory': True, 'draft_version': 2}",
+        "next_action": "estimate",
+        "decision_basis": "估时超限，压缩分镜与旁白"
+      },
+      {
+        "step": 6,
+        "action": "estimate",
+        "parameters": {},
+        "result_summary": "估计总时长 30 秒",
+        "next_action": "check",
+        "decision_basis": "当前脚本尚未估时"
+      },
+      {
+        "step": 7,
+        "action": "check",
+        "parameters": {},
+        "result_summary": "规则通过",
+        "next_action": "finish",
+        "decision_basis": "当前脚本尚未检查规则"
+      },
+      {
+        "step": 8,
+        "action": "finish",
+        "parameters": {},
+        "result_summary": "",
+        "next_action": null,
+        "decision_basis": "当前版本通过时长和规则检查"
+      }
+    ],
+    "model_mode": "mock"
+  }
+}

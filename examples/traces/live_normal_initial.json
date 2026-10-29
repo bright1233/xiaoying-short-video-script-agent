@@ -1,0 +1,299 @@
+[
+  {
+    "step": 1,
+    "action": "search",
+    "parameters": {
+      "query": "抖音 新手创作者 短视频 字幕 添加 制作 技巧"
+    },
+    "result_summary": "检索到 2 条素材：['P01', 'P02']",
+    "next_action": "set_draft",
+    "decision_basis": "先检索字幕相关素材"
+  },
+  {
+    "step": 2,
+    "action": "set_draft",
+    "parameters": {
+      "draft": {
+        "topic": "字幕",
+        "audience": "新手创作者",
+        "platform": "抖音",
+        "style": "简洁",
+        "target_duration_sec": 30,
+        "scenes": [
+          {
+            "id": "S1",
+            "duration_sec": 6,
+            "title": "开头：新手做字幕别慌",
+            "visual": "手机竖屏画面，创作者对着镜头说话，屏幕下方出现字幕",
+            "voiceover": "新手做短视频，字幕别慌。",
+            "caption": "新手做字幕别慌",
+            "fact_claims": []
+          },
+          {
+            "id": "S2",
+            "duration_sec": 8,
+            "title": "功能：支持字幕",
+            "visual": "剪辑界面点击字幕入口，输入文字",
+            "voiceover": "这个功能支持字幕，适合给视频加文字。",
+            "caption": "支持字幕",
+            "fact_claims": [
+              {
+                "fact": "支持字幕",
+                "material_ids": [
+                  "P01"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "S3",
+            "duration_sec": 8,
+            "title": "画面：支持裁剪",
+            "visual": "拖动裁剪框调整画面，让字幕更清楚",
+            "voiceover": "还可以支持画面裁剪，让画面更适合竖屏。",
+            "caption": "支持画面裁剪",
+            "fact_claims": [
+              {
+                "fact": "支持画面裁剪",
+                "material_ids": [
+                  "P02"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "S4",
+            "duration_sec": 8,
+            "title": "结尾：先做简单字幕",
+            "visual": "成片展示，字幕清晰出现在画面下方",
+            "voiceover": "新手先做简单字幕，再慢慢优化画面。",
+            "caption": "先做简单字幕",
+            "fact_claims": []
+          }
+        ]
+      }
+    },
+    "result_summary": "工具失败：ValidationError: 11 validation errors for ScriptDraft\ntitle\n  Field required [type=missing, input_value={'topic': '字幕', 'audi...', 'fact_claims': []}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.0.shot\n  Field required [type=missing, input_value={'id': 'S1', 'duration_se...慌', 'fact_claims': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.0.planned_seconds\n  Field required [type=missing, input_value={'id': 'S1', 'duration_se...慌', 'fact_claims': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.1.shot\n  Field required [type=missing, input_value={'id': 'S2', 'duration_se...aterial_ids': ['P01']}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.1.planned_seconds\n  Field required [type=missing, input_value={'id': 'S2', 'duration_se...aterial_ids': ['P01']}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.1.fact_claims.0\n  Input should be a valid string [type=string_type, input_value={'fact': '支持字幕', 'material_ids': ['P01']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nscenes.2.shot\n  Field required [type=missing, input_value={'id': 'S3', 'duration_se...aterial_ids': ['P02']}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.2.planned_seconds\n  Field required [type=missing, input_value={'id': 'S3', 'duration_se...aterial_ids': ['P02']}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.2.fact_claims.0\n  Input should be a valid string [type=string_type, input_value={'fact': '支持画面裁...'material_ids': ['P02']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type\nscenes.3.shot\n  Field required [type=missing, input_value={'id': 'S4', 'duration_se...幕', 'fact_claims': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nscenes.3.planned_seconds\n  Field required [type=missing, input_value={'id': 'S4', 'duration_se...幕', 'fact_claims': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing",
+    "next_action": "set_draft",
+    "decision_basis": "已有检索素材，开始撰写不超过30秒的简洁脚本并登记可用事实"
+  },
+  {
+    "step": 3,
+    "action": "set_draft",
+    "parameters": {
+      "draft": {
+        "title": "新手短视频字幕简单做法",
+        "topic": "字幕",
+        "audience": "新手创作者",
+        "platform": "抖音",
+        "style": "简洁",
+        "target_duration_sec": 30,
+        "scenes": [
+          {
+            "id": "S1",
+            "title": "开头：新手做字幕别慌",
+            "shot": "手机竖屏固定镜头，创作者面对镜头说话，屏幕下方出现字幕",
+            "planned_seconds": 6,
+            "visual": "手机竖屏画面，创作者对着镜头说话，屏幕下方出现字幕",
+            "voiceover": "新手做短视频，字幕别慌。",
+            "caption": "新手做字幕别慌",
+            "fact_claims": []
+          },
+          {
+            "id": "S2",
+            "title": "功能：支持字幕",
+            "shot": "剪辑界面近景，点击字幕入口并输入文字",
+            "planned_seconds": 8,
+            "visual": "剪辑界面点击字幕入口，输入文字",
+            "voiceover": "这个功能支持字幕，适合给视频加文字。",
+            "caption": "支持字幕",
+            "fact_claims": [
+              "支持字幕|P01"
+            ]
+          },
+          {
+            "id": "S3",
+            "title": "画面：支持裁剪",
+            "shot": "屏幕录制，拖动裁剪框调整画面",
+            "planned_seconds": 8,
+            "visual": "拖动裁剪框调整画面，让字幕更清楚",
+            "voiceover": "还可以支持画面裁剪，让画面更适合竖屏。",
+            "caption": "支持画面裁剪",
+            "fact_claims": [
+              "支持画面裁剪|P02"
+            ]
+          },
+          {
+            "id": "S4",
+            "title": "结尾：先做简单字幕",
+            "shot": "成片展示，镜头缓慢推近字幕区域",
+            "planned_seconds": 8,
+            "visual": "成片展示，字幕清晰出现在画面下方",
+            "voiceover": "新手先做简单字幕，再慢慢优化画面。",
+            "caption": "先做简单字幕",
+            "fact_claims": []
+          }
+        ]
+      }
+    },
+    "result_summary": "{'saved_in_memory': True, 'draft_version': 1}",
+    "next_action": "estimate",
+    "decision_basis": "修正草稿字段并登记已检索事实"
+  },
+  {
+    "step": 4,
+    "action": "estimate",
+    "parameters": {},
+    "result_summary": "估计总时长 30 秒",
+    "next_action": "set_draft",
+    "decision_basis": "set_draft后需重新估算总时长"
+  },
+  {
+    "step": 5,
+    "action": "set_draft",
+    "parameters": {
+      "draft": {
+        "title": "新手短视频字幕简单做法",
+        "scenes": [
+          {
+            "shot": "手机竖屏固定镜头，创作者面对镜头说话，屏幕下方出现字幕",
+            "narration": "新手做短视频，字幕不清楚？",
+            "subtitle": "新手做短视频，字幕不清楚？",
+            "planned_seconds": 6,
+            "fact_claims": [],
+            "material_ids": []
+          },
+          {
+            "shot": "剪辑界面近景，点击字幕入口并输入文字",
+            "narration": "打开剪辑界面，点击字幕入口，输入文字。",
+            "subtitle": "打开剪辑界面，点击字幕入口，输入文字。",
+            "planned_seconds": 8,
+            "fact_claims": [
+              "支持字幕|P01"
+            ],
+            "material_ids": [
+              "P01"
+            ]
+          },
+          {
+            "shot": "屏幕录制，拖动裁剪框调整画面",
+            "narration": "画面主体偏小，可拖动裁剪框调整构图。",
+            "subtitle": "画面主体偏小，可拖动裁剪框调整构图。",
+            "planned_seconds": 8,
+            "fact_claims": [
+              "支持画面裁剪|P02"
+            ],
+            "material_ids": [
+              "P02"
+            ]
+          },
+          {
+            "shot": "成片展示，镜头缓慢推近字幕区域",
+            "narration": "最后检查字幕清晰度和位置，导出成片。",
+            "subtitle": "检查字幕清晰度，导出成片。",
+            "planned_seconds": 8,
+            "fact_claims": [],
+            "material_ids": []
+          }
+        ]
+      }
+    },
+    "result_summary": "{'saved_in_memory': True, 'draft_version': 2}",
+    "next_action": "estimate",
+    "decision_basis": "补全口播与字幕，登记检索事实并保留30秒总时长"
+  },
+  {
+    "step": 6,
+    "action": "estimate",
+    "parameters": {},
+    "result_summary": "估计总时长 30 秒",
+    "next_action": "check",
+    "decision_basis": "set_draft后需重新估算总时长"
+  },
+  {
+    "step": 7,
+    "action": "check",
+    "parameters": {},
+    "result_summary": "规则未通过：['镜头2事实无对应原文：支持字幕|P01', '镜头2标注事实未出现在脚本：支持字幕|P01', '镜头3事实无对应原文：支持画面裁剪|P02', '镜头3标注事实未出现在脚本：支持画面裁剪|P02']",
+    "next_action": "set_draft",
+    "decision_basis": "时长已估算且未超限，需规则校验"
+  },
+  {
+    "step": 8,
+    "action": "set_draft",
+    "parameters": {
+      "draft": {
+        "title": "新手短视频字幕简单做法",
+        "scenes": [
+          {
+            "shot": "手机竖屏固定镜头，创作者面对镜头说话，屏幕下方出现字幕",
+            "narration": "新手做短视频，字幕不清楚？",
+            "subtitle": "新手做短视频，字幕不清楚？",
+            "planned_seconds": 6,
+            "fact_claims": [],
+            "material_ids": []
+          },
+          {
+            "shot": "剪辑界面近景，点击字幕入口并输入文字",
+            "narration": "支持字幕，点击字幕入口，输入文字。",
+            "subtitle": "支持字幕，输入文字。",
+            "planned_seconds": 8,
+            "fact_claims": [
+              "支持字幕"
+            ],
+            "material_ids": [
+              "P01"
+            ]
+          },
+          {
+            "shot": "屏幕录制，拖动裁剪框调整画面",
+            "narration": "画面主体偏小？支持画面裁剪，拖动裁剪框调整构图。",
+            "subtitle": "支持画面裁剪，调整构图。",
+            "planned_seconds": 8,
+            "fact_claims": [
+              "支持画面裁剪"
+            ],
+            "material_ids": [
+              "P02"
+            ]
+          },
+          {
+            "shot": "成片展示，镜头缓慢推近字幕区域",
+            "narration": "最后检查字幕清晰度和位置，导出成片。",
+            "subtitle": "检查字幕清晰度，导出成片。",
+            "planned_seconds": 8,
+            "fact_claims": [],
+            "material_ids": []
+          }
+        ]
+      }
+    },
+    "result_summary": "{'saved_in_memory': True, 'draft_version': 3}",
+    "next_action": "estimate",
+    "decision_basis": "修正事实原文与脚本匹配，保留总时长30秒"
+  },
+  {
+    "step": 9,
+    "action": "estimate",
+    "parameters": {},
+    "result_summary": "估计总时长 30 秒",
+    "next_action": "check",
+    "decision_basis": "已完成草稿保存，需要估算总时长以检查是否超过30秒。"
+  },
+  {
+    "step": 10,
+    "action": "check",
+    "parameters": {},
+    "result_summary": "规则通过",
+    "next_action": "finish",
+    "decision_basis": "已完成estimate，需检查脚本合规后再决定finish"
+  },
+  {
+    "step": 11,
+    "action": "finish",
+    "parameters": {},
+    "result_summary": "",
+    "next_action": null,
+    "decision_basis": "脚本已通过规则检查，总时长30秒符合目标"
+  }
+]

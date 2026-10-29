@@ -1,0 +1,24 @@
+[
+  {
+    "step": 1,
+    "action": "search",
+    "parameters": {
+      "query": "登月火箭"
+    },
+    "result_summary": "检索到 0 条素材：[]",
+    "next_action": "request_input",
+    "decision_basis": "查找可引用的素材事实"
+  },
+  {
+    "step": 2,
+    "action": "request_input",
+    "parameters": {
+      "missing_fields": [
+        "material"
+      ]
+    },
+    "result_summary": "",
+    "next_action": null,
+    "decision_basis": "检索无素材，请求补充资料"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "needs_input",
+    "title": null,
+    "scenes": [],
+    "estimated_duration_sec": null,
+    "material_ids": [],
+    "risks": [],
+    "missing_fields": [
+      "style"
+    ],
+    "reason": "缺少必需业务字段",
+    "trace": [],
+    "model_mode": "mock"
+  }
+}

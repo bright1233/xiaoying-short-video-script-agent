@@ -1,0 +1,206 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "completed",
+    "title": "新手短视频字幕怎么做",
+    "scenes": [
+      {
+        "shot": "新手创作者准备短视频内容，画面出现“支持字幕”文本",
+        "narration": "新手做短视频，可以先了解字幕内容，视频支持字幕。",
+        "subtitle": "支持字幕",
+        "planned_seconds": 8,
+        "fact_claims": [
+          "支持字幕"
+        ],
+        "material_ids": [
+          "P01"
+        ]
+      },
+      {
+        "shot": "画面展示字幕文本，并出现“支持字幕”",
+        "narration": "如果视频需要字幕，可以先明确文字内容，因为视频支持字幕。",
+        "subtitle": "明确字幕内容",
+        "planned_seconds": 8,
+        "fact_claims": [
+          "支持字幕"
+        ],
+        "material_ids": [
+          "P01"
+        ]
+      },
+      {
+        "shot": "新手创作者发布前检查字幕与主题，画面出现“支持字幕”",
+        "narration": "发布前，可以检查字幕是否与视频主题一致，视频支持字幕。",
+        "subtitle": "检查字幕",
+        "planned_seconds": 8,
+        "fact_claims": [
+          "支持字幕"
+        ],
+        "material_ids": [
+          "P01"
+        ]
+      }
+    ],
+    "estimated_duration_sec": 24,
+    "material_ids": [
+      "P01"
+    ],
+    "risks": [],
+    "missing_fields": [],
+    "reason": null,
+    "trace": [
+      {
+        "step": 1,
+        "action": "search",
+        "parameters": {
+          "query": "抖音 新手创作者 短视频 字幕 素材 功能 事实"
+        },
+        "result_summary": "检索到 2 条素材：['P01', 'P02']",
+        "next_action": "set_draft",
+        "decision_basis": "当前无检索素材，需先获取字幕相关事实依据"
+      },
+      {
+        "step": 2,
+        "action": "set_draft",
+        "parameters": {
+          "draft": {
+            "title": "新手短视频字幕怎么做",
+            "scenes": [
+              {
+                "shot": "新手创作者面对短视频内容，画面出现字幕关键词",
+                "narration": "短视频中，字幕是常见内容元素。",
+                "subtitle": "短视频字幕",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "画面展示字幕文本，不展示具体界面操作",
+                "narration": "如果视频需要字幕，可以先明确文字内容。",
+                "subtitle": "先明确字幕内容",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "新手创作者检查视频字幕与主题是否一致",
+                "narration": "发布前，可以检查字幕是否与视频主题一致。",
+                "subtitle": "检查字幕与主题一致",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              }
+            ]
+          },
+          "reason": "已有字幕素材P01，可基于支持字幕撰写简洁脚本"
+        },
+        "result_summary": "{'saved_in_memory': True, 'draft_version': 1}",
+        "next_action": "estimate",
+        "decision_basis": ""
+      },
+      {
+        "step": 3,
+        "action": "estimate",
+        "parameters": {},
+        "result_summary": "估计总时长 24 秒",
+        "next_action": "check",
+        "decision_basis": "已设置草稿，需要估算总时长"
+      },
+      {
+        "step": 4,
+        "action": "check",
+        "parameters": {},
+        "result_summary": "规则未通过：['镜头1标注事实未出现在脚本：支持字幕', '镜头2标注事实未出现在脚本：支持字幕', '镜头3标注事实未出现在脚本：支持字幕']",
+        "next_action": "set_draft",
+        "decision_basis": "已完成set_draft与estimate，需要检查脚本合规与时长"
+      },
+      {
+        "step": 5,
+        "action": "set_draft",
+        "parameters": {
+          "draft": {
+            "title": "新手短视频字幕怎么做",
+            "scenes": [
+              {
+                "shot": "新手创作者准备短视频内容，画面出现“支持字幕”文本",
+                "narration": "新手做短视频，可以先了解字幕内容，视频支持字幕。",
+                "subtitle": "支持字幕",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "画面展示字幕文本，并出现“支持字幕”",
+                "narration": "如果视频需要字幕，可以先明确文字内容，因为视频支持字幕。",
+                "subtitle": "明确字幕内容",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              },
+              {
+                "shot": "新手创作者发布前检查字幕与主题，画面出现“支持字幕”",
+                "narration": "发布前，可以检查字幕是否与视频主题一致，视频支持字幕。",
+                "subtitle": "检查字幕",
+                "planned_seconds": 8,
+                "fact_claims": [
+                  "支持字幕"
+                ],
+                "material_ids": [
+                  "P01"
+                ]
+              }
+            ]
+          }
+        },
+        "result_summary": "{'saved_in_memory': True, 'draft_version': 2}",
+        "next_action": "estimate",
+        "decision_basis": "修正脚本，使支持字幕事实原文出现在各镜头中"
+      },
+      {
+        "step": 6,
+        "action": "estimate",
+        "parameters": {},
+        "result_summary": "估计总时长 24 秒",
+        "next_action": "check",
+        "decision_basis": "set_draft后需重新估算总时长"
+      },
+      {
+        "step": 7,
+        "action": "check",
+        "parameters": {},
+        "result_summary": "规则通过",
+        "next_action": "finish",
+        "decision_basis": "草稿v2已完成估算，需要检查是否通过"
+      },
+      {
+        "step": 8,
+        "action": "finish",
+        "parameters": {},
+        "result_summary": "",
+        "next_action": null,
+        "decision_basis": "当前脚本已基于检索素材P01完成，总时长24秒未超目标30秒，check通过且无问题。"
+      }
+    ],
+    "model_mode": "live"
+  }
+}

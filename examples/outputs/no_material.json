@@ -1,0 +1,40 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "needs_input",
+    "title": null,
+    "scenes": [],
+    "estimated_duration_sec": null,
+    "material_ids": [],
+    "risks": [],
+    "missing_fields": [
+      "material"
+    ],
+    "reason": "缺少完成脚本所需资料",
+    "trace": [
+      {
+        "step": 1,
+        "action": "search",
+        "parameters": {
+          "query": "登月火箭"
+        },
+        "result_summary": "检索到 0 条素材：[]",
+        "next_action": "request_input",
+        "decision_basis": "查找可引用的素材事实"
+      },
+      {
+        "step": 2,
+        "action": "request_input",
+        "parameters": {
+          "missing_fields": [
+            "material"
+          ]
+        },
+        "result_summary": "",
+        "next_action": null,
+        "decision_basis": "检索无素材，请求补充资料"
+      }
+    ],
+    "model_mode": "mock"
+  }
+}
