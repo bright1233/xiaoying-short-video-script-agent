@@ -46,4 +46,6 @@ python -m scripts.generate_examples
 - [复盘](docs/05-retrospective.md)
 - [示例输入](examples/inputs/normal_overlength.json)、[实际 HTTP 输出](examples/outputs/normal_overlength.json)、[逐步 Trace](examples/traces/normal_overlength.json)
 
-`examples/` 包含明确标记为 `mock` 的离线流程记录；这些记录不作为真实模型决策效果证据。另有两条 `qwen3.8-flash` 的真实模型记录：[正常脚本 Trace](examples/traces/live_normal.json) 与 [无素材 Trace](examples/traces/live_no_material.json)。`*_initial.json` 是修复前留存的失败证据，评估文档说明了原因。GitHub URL 与最终 commit SHA 待仓库确定后填写。
+`examples/` 包含明确标记为 `mock` 的离线流程记录；这些记录不作为真实模型决策效果证据。另有两条 `qwen3.8-flash` 的真实模型记录：[正常脚本 Trace](examples/traces/live_normal.json) 与 [无素材 Trace](examples/traces/live_no_material.json)。`*_initial.json` 是修复前留存的失败证据，评估文档说明了原因。
+
+GitHub 仓库：[bright1233/xiaoying-short-video-script-agent](https://github.com/bright1233/xiaoying-short-video-script-agent)。最终提交 SHA 请以提交时仓库 `main` 分支的 SHA 为准，并与题号 4 一起提交。

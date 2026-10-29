@@ -2,6 +2,6 @@
 
 本项目的需求整理、技术方案、代码初版、测试与文档由 Codex 在用户指导下辅助完成。用户明确选择了题目 4、LangGraph、HTTP API、千问预留接口、FastAPI，并要求逐模块实现和检查。Codex 编写并运行了模块测试，根据失败测试调整了规则风险用例，再生成实际 Mock HTTP 示例。
 
-已验证的范围：本地 Python 测试、FastAPI 测试客户端请求、合成素材、Mock 流程，以及配置 API Key 后的两条 `qwen3.8-flash` 真实模型路径。Codex 根据真实 Trace 中的空检索重复、无依据界面操作及无效 JSON 问题修改了观察上下文、规则与模型输出模式，并重新验证。未验证的范围：GitHub 远程提交。`examples/` 中的 Mock Trace 不应被称为真实模型运行结果。
+已验证的范围：本地 Python 测试、FastAPI 测试客户端请求、合成素材、Mock 流程，以及配置 API Key 后的两条 `qwen3.8-flash` 真实模型路径。Codex 根据真实 Trace 中的空检索重复、无依据界面操作及无效 JSON 问题修改了观察上下文、规则与模型输出模式，并重新验证。项目已推送至 GitHub，并读取远程 `main` SHA 核对。`examples/` 中的 Mock Trace 不应被称为真实模型运行结果。
 
 候选人本人后续修改、独立复核内容及实际个人用时尚待本人补充；此处不代填或虚构个人贡献。
